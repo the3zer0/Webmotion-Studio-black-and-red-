@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://the3zer0.github.io/Webmotion-Studio/sitemap.xml
