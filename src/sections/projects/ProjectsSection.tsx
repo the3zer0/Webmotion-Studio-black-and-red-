@@ -4,7 +4,7 @@ export function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden px-6 py-40 lg:px-12"
+      className="relative overflow-hidden px-4 sm:px-6 py-16 md:py-40 lg:px-12"
     >
       {/* Background Glow */}
 
@@ -17,7 +17,7 @@ export function ProjectsSection() {
             SELECTED WORK
           </p>
 
-          <h2 className="font-display text-5xl leading-none text-white md:text-7xl">
+          <h2 className="font-display text-3xl sm:text-5xl leading-none text-white md:text-7xl">
             Creative work
             <br />
             <span className="text-[#ff2b2b]">

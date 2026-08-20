@@ -11,7 +11,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden px-6 py-40 lg:px-12">
+    <footer className="relative overflow-hidden px-4 sm:px-6 py-16 md:py-40 lg:px-12">
       {/* Background Glow */}
 
       <div className="absolute left-1/2 top-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ff2b2b]/10 blur-[300px]" />
@@ -34,7 +34,7 @@ export function Footer() {
           transition={{
             duration: 0.7,
           }}
-          className="font-display text-[clamp(4rem,10vw,10rem)] leading-[0.9] text-white"
+          className="font-display text-[clamp(2.3rem,8vw,10rem)] leading-[0.95] text-white break-words"
         >
           LET&apos;S BUILD
           <br />
@@ -52,7 +52,7 @@ export function Footer() {
 
           <a
             href="mailto:webmotionstudio1@gmail.com"
-            className="group inline-flex flex-wrap items-center gap-4 font-display text-3xl text-white transition-colors duration-300 hover:text-[#ff2b2b] md:text-6xl"
+            className="group inline-flex flex-wrap items-center gap-4 font-display text-xl sm:text-3xl text-white transition-colors duration-300 hover:text-[#ff2b2b] md:text-6xl break-all sm:break-normal"
           >
            webmotionstudio1@gmail.com
 
@@ -135,7 +135,7 @@ export function Footer() {
         {/* Watermark */}
 
         <div className="mt-32 overflow-hidden">
-          <h3 className="font-display text-[clamp(5rem,14vw,14rem)] leading-none text-white/[0.03] select-none">
+          <h3 className="font-display text-[clamp(2.5rem,14vw,14rem)] leading-none text-white/[0.03] select-none">
             WEBMOTION.
           </h3>
         </div>

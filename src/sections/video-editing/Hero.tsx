@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: "55+", label: "Projects Delivered" },
-  { value: "20+", label: "Brands Worked With" },
-  { value: "3M+", label: "Views Generated" },
+  { value: "410+", label: "Projects Delivered" },
+  { value: "100+", label: "Happy Clients Worldwide" },
   { value: "98%", label: "Client Satisfaction" },
+  { value: "5+", label: "Years of Experience" },
 ];
 
 export default function Hero() {
@@ -73,11 +73,11 @@ export default function Hero() {
               <span className="text-[#ff2b2b] text-xl">✦</span>
 
               <span className="text-white font-semibold">
-                1.5+ Years Experience • 55+ Creative Projects
+                5+ Years Experience • 410+ Projects Delivered
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-[0.9] text-white">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-[0.95] text-white">
               CINEMATIC
               <br />
               <span className="bg-gradient-to-r from-[#ff2b2b] to-white bg-clip-text text-transparent">

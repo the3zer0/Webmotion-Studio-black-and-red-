@@ -69,7 +69,7 @@ const whatsappMessage =
   return (
         <section
       id="contact"
-      className="relative overflow-hidden px-6 py-40 lg:px-12"
+      className="relative overflow-hidden px-4 sm:px-6 py-16 md:py-40 lg:px-12"
     >
       {/* Background Glow */}
 
@@ -81,7 +81,7 @@ const whatsappMessage =
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="rounded-[48px] border border-white/10 bg-[#090909]/80 p-10 md:p-20"
+          className="rounded-[28px] sm:rounded-[48px] border border-white/10 bg-[#090909]/80 p-6 sm:p-10 md:p-20"
         >
           <div className="grid gap-16 lg:grid-cols-2">
             {/* LEFT SIDE */}
@@ -91,7 +91,7 @@ const whatsappMessage =
                 START A PROJECT
               </p>
 
-              <h2 className="font-display text-5xl leading-none text-white md:text-8xl">
+              <h2 className="font-display text-3xl sm:text-5xl leading-none text-white md:text-8xl">
                 Ready to build
                 <br />
                 something
@@ -255,7 +255,7 @@ const whatsappMessage =
                     <div className="mt-20 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-4">
             <div>
               <h3 className="font-display text-4xl text-white">
-                55+
+                410+
               </h3>
 
               <p className="mt-2 text-sm uppercase tracking-[0.25em] text-gray-500">
@@ -265,21 +265,11 @@ const whatsappMessage =
 
             <div>
               <h3 className="font-display text-4xl text-white">
-                20+
+                100+
               </h3>
 
               <p className="mt-2 text-sm uppercase tracking-[0.25em] text-gray-500">
-                Brands Worked With
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-display text-4xl text-white">
-                3M+
-              </h3>
-
-              <p className="mt-2 text-sm uppercase tracking-[0.25em] text-gray-500">
-                Views Generated
+                Happy Clients Worldwide
               </p>
             </div>
 
@@ -290,6 +280,16 @@ const whatsappMessage =
 
               <p className="mt-2 text-sm uppercase tracking-[0.25em] text-gray-500">
                 Client Satisfaction
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-display text-4xl text-white">
+                5+
+              </h3>
+
+              <p className="mt-2 text-sm uppercase tracking-[0.25em] text-gray-500">
+                Years of Experience
               </p>
             </div>
           </div>

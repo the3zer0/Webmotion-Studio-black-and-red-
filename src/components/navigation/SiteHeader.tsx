@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Menu, ArrowUpRight, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { Container } from "../common/Container";
 import { GlowLink } from "../buttons/GlowButton";
@@ -19,6 +19,9 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const closeTimerRef = useRef<number | null>(null);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +57,59 @@ export function SiteHeader() {
     }, 120);
   };
 
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    setMobileOpen(false);
+    setServicesOpen(false);
+
+    if (href === "#top" || href === "/") {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 50);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
+
+    if (href.startsWith("#")) {
+      const targetId = href.replace("#", "");
+      const elem = document.getElementById(targetId);
+
+      if (elem) {
+        const headerOffset = 90;
+        const elementPosition = elem.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      } else {
+        navigate("/");
+        setTimeout(() => {
+          const el = document.getElementById(targetId);
+          if (el) {
+            const headerOffset = 90;
+            const elementPosition = el.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }, 100);
+      }
+    } else {
+      navigate(href);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
@@ -72,11 +128,7 @@ export function SiteHeader() {
         >
           <Link
             to="/"
-            onClick={() => {
-              setMobileOpen(false);
-              setServicesOpen(false);
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+            onClick={(e) => handleNavClick(e, "#top")}
             className="flex flex-col leading-none"
           >
             <span className="font-display text-lg font-bold tracking-[0.35em] text-white">
@@ -102,6 +154,7 @@ export function SiteHeader() {
               >
                 <motion.button
                   type="button"
+                  onClick={(e) => handleNavClick(e, "#services")}
                   whileHover={{ y: -2 }}
                   className="group relative flex items-center gap-2 text-[13px] uppercase tracking-[0.28em] text-neutral-400 transition-colors duration-300 hover:text-white"
                 >
@@ -126,7 +179,10 @@ export function SiteHeader() {
                           key={service.label}
                           to={service.href}
                           className="flex items-center justify-between rounded-[18px] px-4 py-3 text-sm text-[#f5f5f5] transition-colors duration-300 hover:bg-white/5 hover:text-[#ff6b35]"
-                          onClick={() => setServicesOpen(false)}
+                          onClick={() => {
+                            setServicesOpen(false);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           <span>{service.label}</span>
                           <ArrowUpRight size={15} className="text-[#ff6b35]" />
@@ -140,6 +196,7 @@ export function SiteHeader() {
               <motion.a
                 key={item.label}
                 href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 whileHover={{ y: -2 }}
                 className="group relative text-[13px] uppercase tracking-[0.28em] text-neutral-400 transition-colors duration-300 hover:text-white"
               >
@@ -154,7 +211,7 @@ export function SiteHeader() {
         {/* CTA */}
 
         <div className="hidden lg:block">
-          <GlowLink href="#contact">
+          <GlowLink href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>
             Start Project
 
             <ArrowUpRight
@@ -182,6 +239,7 @@ export function SiteHeader() {
         onClose={() => setMobileOpen(false)}
         serviceLinks={serviceLinks}
         navigationLinks={navigationLinks}
+        onNavClick={handleNavClick}
       />
     </header>
   );

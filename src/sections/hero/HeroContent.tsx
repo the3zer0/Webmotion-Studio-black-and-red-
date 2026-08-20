@@ -25,7 +25,7 @@ export function HeroContent() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: .15 }}
-        className="mt-8 font-display text-[3.8rem] font-semibold leading-[0.9] tracking-tight text-white md:text-[5.5rem] xl:text-[7rem]"
+        className="mt-8 font-display text-[2.5rem] sm:text-[3.8rem] font-semibold leading-[0.95] tracking-tight text-white md:text-[5.5rem] xl:text-[7rem]"
       >
         We Create
         <br />

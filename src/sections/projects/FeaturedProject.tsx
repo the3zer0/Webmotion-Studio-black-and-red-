@@ -31,10 +31,10 @@ export function FeaturedProject({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7 }}
-      className="border-b border-white/10 py-28"
+      className="border-b border-white/10 py-14 sm:py-20 md:py-28"
     >
       <div
-        className={`grid items-center gap-20 lg:grid-cols-2 ${
+        className={`grid items-center gap-10 lg:gap-20 lg:grid-cols-2 ${
           reverse ? "lg:[&>*:first-child]:order-2" : ""
         }`}
       >
@@ -58,7 +58,7 @@ export function FeaturedProject({
 
             {/* Browser Preview */}
 
-            <div className="relative h-[500px] p-6">
+            <div className="relative h-[320px] sm:h-[420px] md:h-[500px] p-4 sm:p-6">
               {/* Browser Dots */}
 
               <div className="flex gap-2 border-b border-white/10 pb-5">
@@ -69,7 +69,7 @@ export function FeaturedProject({
 
               {/* Image */}
 
-              <div className="relative mt-6 h-[405px] overflow-hidden rounded-3xl border border-white/10 bg-black">
+              <div className="relative mt-4 sm:mt-6 h-[235px] sm:h-[330px] md:h-[405px] overflow-hidden rounded-3xl border border-white/10 bg-black">
                 <img
                   src={image}
                   alt={`${title} project preview`}
@@ -100,7 +100,7 @@ export function FeaturedProject({
         <div className="relative">
           {/* Project Number */}
 
-          <span className="absolute -left-4 -top-16 font-display text-[8rem] leading-none text-white/[0.03]">
+          <span className="absolute -left-4 -top-16 font-display text-[5rem] sm:text-[8rem] leading-none text-white/[0.03]">
             {id}
           </span>
 
@@ -112,7 +112,7 @@ export function FeaturedProject({
 
           {/* Title */}
 
-          <h3 className="font-display text-5xl leading-none text-white md:text-6xl">
+          <h3 className="font-display text-3xl sm:text-5xl leading-none text-white md:text-6xl">
             {title}
           </h3>
 

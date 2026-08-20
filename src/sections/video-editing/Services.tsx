@@ -39,14 +39,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 px-6 bg-[#0a0a0a]">
+    <section id="services" className="py-16 md:py-32 px-4 sm:px-6 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <p className="text-[#ff2b2b] uppercase tracking-[0.3em] text-sm mb-4">
             Services
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             What We Do
           </h2>
 

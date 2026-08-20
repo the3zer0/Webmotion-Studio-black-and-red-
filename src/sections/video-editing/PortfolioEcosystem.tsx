@@ -47,7 +47,7 @@ const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
 return (
 <> <section
   id="projects"
-  className="py-24 px-6 bg-[#0a0a0a]"
+  className="py-16 md:py-24 px-4 sm:px-6 bg-[#0a0a0a]"
 > <div className="max-w-7xl mx-auto">
 
 
@@ -56,7 +56,7 @@ return (
           Featured Work
         </p>
 
-        <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
           Selected Projects
         </h2>
 

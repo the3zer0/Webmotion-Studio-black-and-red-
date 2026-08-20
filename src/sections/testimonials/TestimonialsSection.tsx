@@ -2,7 +2,7 @@ import { TestimonialSlider } from "./TestimonialSlider";
 
 export function TestimonialsSection() {
   return (
-    <section className="relative overflow-hidden px-6 py-40 lg:px-12">
+    <section className="relative overflow-hidden px-4 sm:px-6 py-16 md:py-40 lg:px-12">
       <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[#ff2b2b]/5 blur-[220px]" />
 
       <div className="relative mx-auto max-w-[1600px]">
@@ -11,7 +11,7 @@ export function TestimonialsSection() {
             TESTIMONIALS
           </p>
 
-          <h2 className="font-display text-5xl leading-none text-white md:text-7xl">
+          <h2 className="font-display text-3xl sm:text-5xl leading-none text-white md:text-7xl">
   Trusted by creators,
   <br />
   founders and brands.

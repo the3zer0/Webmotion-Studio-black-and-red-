@@ -129,9 +129,9 @@ export default function FeaturedWork() {
   return (
     <section
       id="projects"
-      className="py-32 bg-[#151515]"
+      className="py-16 md:py-32 bg-[#151515]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* BIG EXPERIENCE BADGE */}
      <div className="flex justify-center mb-10">
@@ -139,9 +139,11 @@ export default function FeaturedWork() {
     className="
       inline-flex
       items-center
-      gap-3
-      px-8
-      py-4
+      justify-center
+      flex-wrap
+      gap-2 sm:gap-3
+      px-4 sm:px-8
+      py-3 sm:py-4
       rounded-full
       border
       border-[#ff2b2b]/30
@@ -151,14 +153,14 @@ export default function FeaturedWork() {
       backdrop-blur-xl
     "
   >
-    <span className="text-[#ff2b2b] text-lg font-bold">
-      6+ Years Experienced
+    <span className="text-[#ff2b2b] text-sm sm:text-lg font-bold">
+      5+ Years Experience
     </span>
 
     <span className="text-zinc-500">•</span>
 
     <span className="text-white text-lg font-bold">
-      351+ Projects Completed
+      410+ Projects Delivered
     </span>
   </div>
 </div>
@@ -169,7 +171,7 @@ export default function FeaturedWork() {
             Portfolio
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Featured Work
           </h2>
 

@@ -41,7 +41,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-32 px-6 bg-[#111111]"
+      className="py-16 md:py-32 px-4 sm:px-6 bg-[#111111]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
@@ -50,7 +50,7 @@ export default function Services() {
             Services
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             What We Design
           </h2>
 

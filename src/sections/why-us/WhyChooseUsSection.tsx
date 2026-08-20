@@ -37,7 +37,7 @@ export function WhyChooseUsSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#080808] px-6 py-32 lg:px-12"
+      className="relative overflow-hidden bg-[#080808] px-4 sm:px-6 py-16 md:py-32 lg:px-12"
     >
       {/* Background Glows */}
 
@@ -60,7 +60,7 @@ export function WhyChooseUsSection() {
             WHY WEBMOTION
           </p>
 
-          <h2 className="text-5xl font-bold leading-[0.95] tracking-tight text-white md:text-7xl">
+          <h2 className="text-3xl sm:text-5xl font-bold leading-[0.95] tracking-tight text-white md:text-7xl">
             More Than a Service.
             <br />
             <span className="text-[#ff2b2b]">
@@ -159,7 +159,7 @@ export function WhyChooseUsSection() {
               OUR APPROACH
             </p>
 
-            <h3 className="text-4xl font-semibold leading-tight text-white md:text-5xl">
+            <h3 className="text-3xl sm:text-4xl font-semibold leading-tight text-white md:text-5xl">
               Built around your
               <br />
               <span className="text-gray-500">

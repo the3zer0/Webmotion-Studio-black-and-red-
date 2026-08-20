@@ -29,7 +29,7 @@ export default function Accordion({
   return (
     <section
       id="faq"
-      className="relative overflow-hidden bg-[#111111] px-6 py-32"
+      className="relative overflow-hidden bg-[#111111] px-4 sm:px-6 py-16 md:py-32"
     >
       {/* Background Glow */}
 
@@ -44,7 +44,7 @@ export default function Accordion({
             FAQ
           </p>
 
-          <h2 className="mb-6 text-5xl font-bold text-white md:text-6xl">
+          <h2 className="mb-6 text-3xl sm:text-5xl md:text-6xl font-bold text-white">
             {title}
           </h2>
 

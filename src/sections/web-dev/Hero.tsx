@@ -4,23 +4,23 @@ import '../../styles/web-dev/hero.css'
 
 const stats = [
   {
-    value: '30+',
-    label: 'Websites Delivered',
+    value: '410+',
+    label: 'Projects Delivered',
   },
 
   {
-    value: '3+',
-    label: 'Years Experience',
+    value: '100+',
+    label: 'Happy Clients Worldwide',
   },
 
   {
-    value: '12+',
-    label: 'Industries Served',
-  },
-
-  {
-    value: '99%',
+    value: '98%',
     label: 'Client Satisfaction',
+  },
+
+  {
+    value: '5+',
+    label: 'Years of Experience',
   },
 ]
 

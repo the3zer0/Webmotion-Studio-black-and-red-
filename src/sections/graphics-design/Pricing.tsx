@@ -158,7 +158,7 @@ export default function Pricing() {
             PRICING
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Transparent Pricing
           </h2>
 

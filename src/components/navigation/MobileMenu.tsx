@@ -12,6 +12,7 @@ type MobileMenuProps = {
 	onClose: () => void;
 	navigationLinks: NavigationItem[];
 	serviceLinks: NavigationItem[];
+	onNavClick?: (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>, href: string) => void;
 };
 
 export function MobileMenu({
@@ -19,6 +20,7 @@ export function MobileMenu({
 	onClose,
 	navigationLinks,
 	serviceLinks,
+	onNavClick,
 }: MobileMenuProps) {
 	return (
 		<AnimatePresence>
@@ -43,7 +45,10 @@ export function MobileMenu({
 											<Link
 												key={service.label}
 												to={service.href}
-												onClick={onClose}
+												onClick={() => {
+													onClose();
+													window.scrollTo({ top: 0, behavior: "smooth" });
+												}}
 												className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-[#f5f5f5] transition-colors duration-300 hover:border-[#ff6b35] hover:text-[#ff6b35]"
 											>
 												<span>{service.label}</span>
@@ -56,7 +61,12 @@ export function MobileMenu({
 								<a
 									key={item.label}
 									href={item.href}
-									onClick={onClose}
+									onClick={(e) => {
+										onClose();
+										if (onNavClick) {
+											onNavClick(e, item.href);
+										}
+									}}
 									className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm uppercase tracking-[0.28em] text-[#f5f5f5] transition-colors duration-300 hover:border-[#ff6b35] hover:text-[#ff6b35]"
 								>
 									{item.label}

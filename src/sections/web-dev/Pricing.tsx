@@ -125,7 +125,7 @@ export default function Pricing() {
             Package Comparison
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Choose Your Website Package
           </h2>
 

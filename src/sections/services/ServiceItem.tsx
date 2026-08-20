@@ -62,7 +62,7 @@ export function ServiceItem({
             </p>
 
             <h3
-              className={`font-display text-4xl transition-all duration-300 ${
+              className={`font-display text-2xl sm:text-4xl transition-all duration-300 ${
                 active
                   ? "text-white"
                   : "text-gray-300"

@@ -1,23 +1,19 @@
 const stats = [
   {
-    value: "351+",
-    label: "Projects Completed",
-  },
-  {
-    value: "62+",
-    label: "Logo Designs",
-  },
-  {
-    value: "120+",
-    label: "Print Designs",
+    value: "410+",
+    label: "Projects Delivered",
   },
   {
     value: "100+",
-    label: "Thumbnail Designs",
+    label: "Happy Clients Worldwide",
   },
   {
-    value: "69+",
-    label: "Social Media Posts",
+    value: "98%",
+    label: "Client Satisfaction",
+  },
+  {
+    value: "5+",
+    label: "Years of Experience",
   },
 ];
 
@@ -51,11 +47,11 @@ export default function Hero() {
             <span className="text-[#ff2b2b] text-xl">✦</span>
 
             <span className="text-white text-lg md:text-xl font-bold">
-              6+ Years Experience • 351+ Projects Completed
+              5+ Years Experience • 410+ Projects Delivered
             </span>
           </div>
 
-          <h1 className="text-[3.5rem] md:text-[6.5rem] leading-[0.9] font-bold text-white">
+          <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[6.5rem] leading-[0.95] font-bold text-white">
             DESIGNS THAT
             <br />
             <span className="bg-gradient-to-r from-[#ff2b2b] to-[#ff2b2b] bg-clip-text text-transparent">
@@ -68,7 +64,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            With 6+ years of experience and over 351 completed projects, we help
+            With 5+ years of experience and over 410 delivered projects, we help
             businesses, creators, and organizations stand out through strategic
             logo design, print materials, social media creatives, and
             high-converting thumbnails.
@@ -139,7 +135,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <h3 className="text-4xl font-bold text-[#ff2b2b]">
