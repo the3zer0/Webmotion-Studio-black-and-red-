@@ -18,9 +18,9 @@ export function ProcessSection() {
           </h2>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-400">
-            A proven framework designed to reduce friction,
-            eliminate guesswork and transform ideas into
-            exceptional digital experiences.
+           A proven creative process designed to turn ideas into
+  high-performing digital experiences across web development,
+  graphic design, and video editing.
           </p>
         </div>
 

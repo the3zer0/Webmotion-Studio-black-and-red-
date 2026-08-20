@@ -5,7 +5,7 @@ import Hero from "../sections/web-dev/Hero";
 import FeaturedWork from "../sections/web-dev/FeaturedWork";
 import Services from "../sections/web-dev/Services";
 import Process from "../sections/web-dev/Process";
-import Testimonials from "../sections/web-dev/Testimonials";
+import FAQ from "../sections/web-dev/Faq";
 import Pricing from "../sections/web-dev/Pricing";
 
 export function WebDevelopmentPage() {
@@ -18,8 +18,8 @@ export function WebDevelopmentPage() {
         <FeaturedWork />
         <Services />
         <Process />
-        <Testimonials />
         <Pricing />
+        <FAQ />
         <CtaSection />
         <Footer />
       </main>

@@ -8,8 +8,8 @@ import PortfolioEcosystem from "../sections/video-editing/PortfolioEcosystem";
 import Services from "../sections/video-editing/Services";
 import Process from "../sections/video-editing/Process";
 import TheStory from "../sections/video-editing/TheStory";
-import Testimonials from "../sections/video-editing/Testimonials";
 import Pricing from "../sections/video-editing/Pricing";
+import FAQ from "../sections/video-editing/Faq";
 
 export function VideoEditingPage() {
   return (
@@ -22,8 +22,9 @@ export function VideoEditingPage() {
         <Services />
         <Process />
         <TheStory />
-        <Testimonials />
         <Pricing />
+        <FAQ />
+
         <CtaSection />
         <Footer />
       </main>

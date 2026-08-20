@@ -6,8 +6,8 @@ import FeaturedWork from "../sections/graphics-design/FeaturedWork";
 import Services from "../sections/graphics-design/Services";
 import Process from "../sections/graphics-design/Process";
 // TheStory module was not found; omitted to prevent build error
-import Testimonials from "../sections/graphics-design/Testimonials";
 import Pricing from "../sections/graphics-design/Pricing";
+import FAQ from "../sections/graphics-design/Faq";
 
 export function GraphicsDesignPage() {
   return (
@@ -21,8 +21,9 @@ export function GraphicsDesignPage() {
         <Services />
         <Process />
         {/* TheStory section omitted due to missing module */}
-        <Testimonials />
+        
         <Pricing />
+        <FAQ />
         <CtaSection />
         <Footer />
       </main>

@@ -72,19 +72,19 @@ export function HeroContent() {
         </GlowLink>
 
         <GlowButton
-          onClick={() =>
-            window.location.assign(
-              "mailto:hello@webmotionstudio.com"
-            )
-          }
-        >
-          Start Project
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+>
+  Start Project
 
-          <ArrowUpRight
-            size={18}
-            className="transition group-hover:translate-x-1 group-hover:-translate-y-1"
-          />
-        </GlowButton>
+  <ArrowUpRight
+    size={18}
+    className="transition group-hover:translate-x-1 group-hover:-translate-y-1"
+  />
+</GlowButton>
       </motion.div>
 
       {/* Trust */}
@@ -97,11 +97,11 @@ export function HeroContent() {
       >
         <div>
           <h3 className="font-display text-3xl text-white">
-            240+
+            410+
           </h3>
 
           <p className="mt-1 text-sm uppercase tracking-[0.25em] text-gray-500">
-            Projects
+            Projects Delivered
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export function HeroContent() {
 
         <div>
           <h3 className="font-display text-3xl text-white">
-            96%
+            98%
           </h3>
 
           <p className="mt-1 text-sm uppercase tracking-[0.25em] text-gray-500">
@@ -121,11 +121,11 @@ export function HeroContent() {
 
         <div>
           <h3 className="font-display text-3xl text-white">
-            3M+
+            5+
           </h3>
 
           <p className="mt-1 text-sm uppercase tracking-[0.25em] text-gray-500">
-            Views Generated
+            Years of Experience
           </p>
         </div>
       </motion.div>

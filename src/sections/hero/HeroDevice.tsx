@@ -88,7 +88,10 @@ export function HeroDevice() {
               We Build
               <br />
 
-              Brands That
+              <span className="text-[#ff2b2b]">
+                Brands</span>
+
+               That
               <br />
 
               Stand Out.
@@ -130,7 +133,7 @@ export function HeroDevice() {
                 <div className="flex gap-6 text-[11px] uppercase tracking-[0.25em] text-gray-500">
 
                   <span>Home</span>
-                  <span>Work</span>
+                  <span>Services</span>
                   <span>Contact</span>
 
                 </div>
@@ -166,16 +169,17 @@ export function HeroDevice() {
 
                   </p>
 
-                  <button className="group mt-7 inline-flex items-center gap-3 rounded-full bg-[#ff2b2b] px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-[#ff4545]">
+                  <a
+  href="#projects"
+  className="group mt-7 inline-flex items-center gap-3 rounded-full bg-[#ff2b2b] px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-[#ff4545]"
+>
+  View Project
 
-                    View Project
-
-                    <ArrowUpRight
-                      size={16}
-                      className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                    />
-
-                  </button>
+  <ArrowUpRight
+    size={16}
+    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+  />
+</a>
 
                 </div>
 
