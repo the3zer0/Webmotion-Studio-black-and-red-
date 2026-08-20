@@ -11,7 +11,7 @@ import "./styles/utilities.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Webmotion.Studio/">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
